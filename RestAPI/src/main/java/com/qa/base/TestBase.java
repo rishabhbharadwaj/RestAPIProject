@@ -12,11 +12,9 @@ public class TestBase {
 	public int RESPONSE_STATUS_CODE_400 = 400;
 	public int RESPONSE_STATUS_CODE_401 = 401;
 	public int RESPONSE_STATUS_CODE_201 = 201;
-		
 	public Properties prop;
 	
 	public TestBase() {
-		
 		try {
 			prop = new Properties();
 			FileInputStream input = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/config/config.property");
@@ -26,8 +24,5 @@ public class TestBase {
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
-		
 	}
-	
-	
 }
