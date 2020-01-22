@@ -49,7 +49,6 @@ public class GetAPITest extends TestBase{
 		
 		String s = TestUtil.getValueByJPath(responseJson,"/per_page");
 		
-		
 		//c. All headers
 		Header[] headerResponse = closeableHttpResponse.getAllHeaders();
 		HashMap<String, String> allHeaders = new HashMap<String, String>();
